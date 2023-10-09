@@ -21,7 +21,7 @@ const autorSchema = new Schema({
     },
     libros:[{
         type: Schema.Types.ObjectId,
-        ref: "Libros"
+        ref: "Libro"
     }]
 });
 

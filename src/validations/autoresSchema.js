@@ -14,12 +14,12 @@ export const autorSchema = checkSchema({
     fechaNacimiento: {
         in: ["body"],
         notEmpty: true,
-        isDate: true,
+        isISO8601: true,
     },
     fechaMuerte: {
         in: ["body"],
         optional: true,
-        isDate: true,
+        isISO8601: true,
     },
     biografia: {
         in: ["body"],

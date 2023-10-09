@@ -1,6 +1,7 @@
 import { getLibros, getLibroById, createLibro, updateLibro, deleteLibro, getLibroByISBN, getLibroByAnyWord, getLibroByTitulo, getLibroByGenero } from "../models/Libros.js";
 
-export const getLibrosCtrl = async (req, res) => {
+export const getLibrosCtrl = async (_req, res) => {
+
     try {
         const libros = await getLibros();
         res.status(200).json(libros);
@@ -21,8 +22,10 @@ export const getLibroByIdCtrl = async (req, res) => {
 }
 
 export const createLibroCtrl = async (req, res) => {
+    const { portada } = req.files; 
+    // Subir la portada
     try {     
-        const libro = { ...req.body, portada: req.files.portada };
+        const libro = { ...req.body, portada: portada };
         const newLibro = await createLibro(libro);
         res.status(201).json(newLibro);
     } catch (error) {
