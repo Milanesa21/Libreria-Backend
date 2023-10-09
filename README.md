@@ -7,7 +7,7 @@ Dentro del directorio del proyecto ejecutar:
 npm install
 ```
 
-## Requiere de una base de datos MySQL.
+## Requiere de una base de datos MongoDB.
 
 Variables de entorno:
 ```bash
