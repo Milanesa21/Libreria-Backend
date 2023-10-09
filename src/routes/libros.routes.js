@@ -1,7 +1,7 @@
 import { Router } from "express";
-import { getLibrosCtrl, getLibroByIdCtrl, createLibroCtrl, updateLibroCtrl, deleteLibroCtrl, getLibroByISBNCtrl, getLibroByAnyWordCtrl, getLibroByTituloCtrl, getLibroByGeneroCtrl } from "../controllers/libro.controller.js";
+import { getLibrosCtrl, getLibroByIdCtrl, createLibroCtrl, updateLibroCtrl, deleteLibroCtrl, getLibroByISBNCtrl, getLibroByAnyWordCtrl, getLibroByTituloCtrl, getLibroByGeneroCtrl } from "../controllers/libros.controllers.js";
 import { libroSchema } from "../validations/index.js";
-import { validate } from "../middlewares/validation.js";
+import { validate } from "../middlewares/Validator.js";
 
 const router = Router();
 

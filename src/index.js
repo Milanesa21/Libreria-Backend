@@ -3,14 +3,17 @@ import 'dotenv/config';
 import cors from 'cors'
 import fileUpload from "express-fileupload";
 import { v2 as cloudinary } from 'cloudinary';
-import { connectDB } from './config/db.js';
-import { autorRoutes, libroRoutes } from './routes/route.routes.js'
+import { connectDB } from './db/db.js'
+import { autorRoutes, libroRoutes } from './routes/index.js'
+import path from 'path';
 
 const app = express();
 
 const PORT = process.env.PORT || 3000;
 
 //Middlewares
+const publicPath = path.resolve('./Front');
+app.use(express.static(publicPath))
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cors());

@@ -13,10 +13,6 @@ export const libroSchema = checkSchema({
         in: ["body"],
         notEmpty: true,
     },
-    titulo: {
-        in: ["body"],
-        notEmpty: true
-    },
     autor: {
         in: ["body"],
         notEmpty: true

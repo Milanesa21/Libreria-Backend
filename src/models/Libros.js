@@ -7,7 +7,7 @@ import { uploadImageToCloudinary } from "../helpers/UploadImage.js";
 const libroSchema = new Schema ({
     titulo: {
         type: String,
-        requires: true,
+        required: true,
     },
     autor:{
     type: Schema.Types.ObjectId,
@@ -19,14 +19,14 @@ const libroSchema = new Schema ({
     },
     editorial: {
         type: String,
-        requires: true,
+        required: true,
     },
     fechaPublicacion: {
-        types: Date,
+        type: Date,
         required: true,
     },
      portada: {
-         types: String,
+         type: String,
          requires: true,
     },
     genero: {

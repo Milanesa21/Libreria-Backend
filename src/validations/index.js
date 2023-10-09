@@ -1,2 +1,2 @@
-export * from './autorSchema.js';
-export * from './libroSchema.js';
+export * from './autoresSchema.js';
+export * from './librosSchema.js';
