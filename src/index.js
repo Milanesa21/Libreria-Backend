@@ -4,7 +4,7 @@ import cors from 'cors'
 import fileUpload from "express-fileupload";
 import { v2 as cloudinary } from 'cloudinary';
 import { connectDB } from './config/db.js';
-import { autorRoutes, libroRoutes } from './routes/index.js';
+import { autorRoutes, libroRoutes } from './routes/route.routes.js'
 
 const app = express();
 
