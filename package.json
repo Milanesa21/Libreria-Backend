@@ -8,7 +8,7 @@
     "dev": "nodemon src/index.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "Diego Jara",
   "license": "ISC",
   "dependencies": {
     "cloudinary": "^1.41.0",
