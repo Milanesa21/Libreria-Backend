@@ -7,7 +7,7 @@ Dentro del directorio del proyecto ejecutar:
 npm install
 ```
 
-## Requiere de una base de datos MongoDB.
+## Requiere de una base de datos MongoDB y Cloudinary.
 
 Variables de entorno:
 ```bash
